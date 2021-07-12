@@ -218,4 +218,11 @@ hr{
     font-size: 15px;
 }
 
-/* responsive css */
+/* footer css */
+.site-footer{
+    background-color: #562EFF;
+    text-align: center;
+    padding: 40px 0px;
+    color: #fff;
+    margin-top: 50px;
+}
