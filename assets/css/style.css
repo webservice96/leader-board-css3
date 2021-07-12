@@ -10,6 +10,8 @@ body{
 main{
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 hr{
@@ -21,6 +23,7 @@ hr{
     background-color: #ffff;
     padding: 30px;
     border-radius: 5px;
+    margin-top: 21px;
 }
 
 /* top player css */
@@ -99,4 +102,65 @@ hr{
     text-decoration: none;
     padding-left: 5px;
     color: #562EFF;
+}
+
+/* latest courses css */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+}
+
+.course {
+    width: 252px;
+    box-shadow: 0px 5.34229px 13.3557px rgb(109 80 80 / 17%);
+    padding: 11px;
+    border-radius: 5px;
+}
+
+.course-banner img{
+    width: 224px;
+    height: 104px;
+}
+.course-title{
+    font-size: 20px;
+    line-height: 23px;
+    margin: 0;
+    padding: 20px 0px 7px;
+}
+.course-author{
+    margin: 0;
+    margin-bottom: 20px;
+    color: #ED6B4F;
+    font-size: 14px;
+}
+.course-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ratting-star i{
+    font-size: 14px;
+    color: #AEAEAE;
+}
+.ratting-star i.fill{
+    color: #FFC014;
+}
+.course-info .ratting-number{
+    font-size: 14px;
+    color: #A2A2A2;
+    margin-left: 10px;
+}
+
+.course-duration {
+    background-color: #FFE4E8;
+    font-size: 14px;
+    color: #FF4A60;
+    padding: 5px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.course-duration i{
+    font-size: 15px;
 }
